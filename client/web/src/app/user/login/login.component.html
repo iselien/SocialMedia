@@ -1,0 +1,74 @@
+<div id="main_bg">
+
+    <div id="main_box" [style.height.px]="inboxheight">
+        <div id="main_inbox">
+            <div id="login_content" *ngIf="inputUsernameContent">
+                <h2>Cloud Photography Association</h2>
+                <h1>Sign in</h1>
+                <div class="msg">{{errorMessage}}</div>
+                <input type="email" name="username" placeholder="Email, phone, or Account ID" [(ngModel)]="username" (keydown)="changeHeight()">
+                <p>No account? <a (click)="displayCreateAccount()">Create one!</a></p>
+                <p>Have a question?<a href="#">Help me!</a></p>
+                <p class="btn login"> <input id="next" type="button" value="Next" (click)="verifyUsername()" > </p>   
+            </div>
+            <div id="password_content" *ngIf="inputPasswordContent">
+                <p (click)="backVerifyUsername()"><i id="back" class="fa fa-arrow-left" aria-hidden="true"></i><span>{{username}}</span></p>
+                <h1>Enter password</h1>
+                <div class="msg" [innerHTML]="errorMessage"></div>
+                <input type="password" name="password" placeholder="Password" [(ngModel)]="password" (keydown)="changeHeight()">
+                <p><i id="kstatus" [class]="statusIcon" aria-hidden="true" (click)="changeStatus()"></i>Keep me signed in</p>
+                <p><a href="#">Forgot password!</a></p>
+                <p><a href="#">Sign in with a security key</a></p>
+                <p class="btn password"> <input type="button" value="Sign In" (click)="login()" > </p>
+            </div>
+            <div id="create_content" *ngIf="createAccountContent">
+                <p (click)="backVerifyUsername()"><i id="back" class="fa fa-arrow-left" aria-hidden="true"  ></i><span id="account">Back to login</span></p>
+                <h1>Create account</h1>
+                <div class="msg">{{errorMessage}}</div>
+                <input type="text" name="newUsername" placeholder="someone@example.com" [(ngModel)]="newUsername" (keydown)="changeHeight()">
+                <p><a href="#">Use a phone number instead</a></p>
+                <p class="btn create"> <input id="signin" type="button" value="Next" (click)="verifyIsExist()"> </p>
+            </div>
+
+            <div id="create_content1" *ngIf="createPasswordContent">
+                <p (click)="backVerifyUsername()"><i id="back" class="fa fa-arrow-left" aria-hidden="true"  ></i><span id="account">Back to login</span></p>
+                <h1>Create password</h1>
+                <div class="msg">{{errorMessage}}</div>
+                <input type="password" name="newPassword" placeholder="Password" [(ngModel)]="newPassword" (keydown)="changeHeight()">
+                <p class="btn create"> <input id="signin" type="button" value="Confirm" (click)="confirmCreate()"> </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+ <!--
+     
+    
+    
+    <div>
+        <div style="text-align: center;">
+            <p> <input type="text" name="username" placeholder="input your username please" [(ngModel)]="username"> </p>
+            <p> <input type="text" name="password" placeholder="input your password please" [(ngModel)]="password"> </p>
+            <p> <input type="text" name="vcode" placeholder="input this verification code please" [(ngModel)]="vcode"> <img src="http://192.168.16.106:8080/user/verification"> </p>
+            <p> <input type="button" value="login" (click)="login()"> </p>
+        </div>
+    </div> -->
+
+<!-- 
+    <br><br><br>
+
+    <div>
+        logout
+
+        <p> <input type="button" value="logout" (click)="logout()"> </p>
+
+    </div> -->

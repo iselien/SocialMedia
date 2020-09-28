@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+    color: rgba(0, 103, 184);
+}
+
+#main_bg{
+    background: url(../../../assets/img/login_page_bg.jpg) no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    height: 800px;
+    position: relative;
+}
+
+#main_box{
+    width: 450px;
+    height: 380px;
+    background: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: #eee solid 2px;
+    box-shadow: #ececec 3px 3px 10px;
+}
+#main_inbox{
+    width: 350px;
+    margin: 50px auto;
+}
+#main_box h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* line-height: 40px; */
+
+}
+#main_box h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+input[name="username"],input[name="password"],input[name="newUsername"],input[name="newPassword"]{
+    border: none;
+    border-bottom: black solid 1px;
+    height: 35px;
+    width: 100%;
+    outline:none; 
+}
+#main_box p{
+    margin-top: 20px;
+}
+
+.btn input{
+    float: right;
+    margin-top: 40px;
+    width: 100px;
+    height: 35px;
+    background: #2ffeff;
+    border: none;
+}
+.password input{
+    margin-top: 0px;
+}
+.create input{
+    margin-top: 80px;
+}
+.fa{
+    margin-right: 10px;
+}
+.fa-square-o,.fa-check-square{
+    font-size: 30px;
+}
+
+.msg{
+    color: tomato;
+    margin-top:0;
+}

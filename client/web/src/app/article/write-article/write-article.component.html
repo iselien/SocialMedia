@@ -1,0 +1,30 @@
+<div id="eventBind">
+    <div id="write_box" *ngIf="display">
+        <input id="upload" type="file" multiple=true (change)="change()" accept="image/png,image/gif,image/jpeg" style="display: none;"> 
+        <div id="write_inbox">
+            <span>Publish the latest photography</span><i class="fa fa-window-close" aria-hidden="true" (click)="close()"></i>
+            <div id="content_container"> <textarea id="content" name="content" autofocus="true" placeholder="Write something..."></textarea> </div>
+            <div id="photo_container">
+                <div id="photo_inbox">
+                    <div *ngFor="let photo of PhotoList" style="background: url({{photo.dataUrl}}); background-position: center center;" [style.background-size]="photo.asBackground" [ngClass]="photoInboxClass">
+                        <p>
+                            <i class="fa fa-circle-o" aria-hidden="true" (click)="select(photo.filename,$event.target)"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(photo.filename)"></i>
+                        </p> 
+                        <p [ngClass]="filenameClass">{{photo.filename}}<i class="fa fa-check" aria-hidden="true"></i></p> 
+                    </div>
+                <i class="fa fa-plus" aria-hidden="true" (click)="addPhoto()"></i>
+                </div>
+            </div>
+            <div id="tag"> 
+               Albums: <select id="albumSelect"></select>
+                <div style="margin-bottom: 10px; height: 40px;">
+                    <input id="searchBox" (keyup)="searchTags($event)" type="text" placeholder="Tags">
+                    <i (click)="searchBlur()" class="fa fa-times" aria-hidden="true"></i>
+                    <div id="searchContent"></div>
+                </div>
+                <p id="TagBox"><span *ngFor="let tag of TagsList" style="padding:5px 8px; margin: 0 2px ; height:30px;border: #eee solid 1px;border-radius: 5px;">{{tag}}</span></p>
+                <a (click)="upload()" id="publish">Publish</a> </div>
+        </div>
+    </div>
+</div>

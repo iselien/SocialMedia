@@ -1,0 +1,36 @@
+<div id="main_bg" *ngIf="user">
+    <div id="top_box">
+        <p id="portrait">
+            <!-- <img src="https://wx2.sinaimg.cn/mw690/ad54c1b9ly1gdptpe4owsj235r4qn4qu.jpg" /> -->
+        </p>
+        <p>{{user.username}}<i class="fa fa-mars" aria-hidden="true"></i></p>
+        <p>I'm a luckly girl</p>
+        <p><a>Follow</a><a>Message</a><i class="fa fa-bars" aria-hidden="true"></i></p>
+        <div><span *ngIf="self" (click)="resume()">Resume</span><span (click)="home()">Home page</span><span (click)="photo()">Photo Album</span></div>
+    </div>
+
+    <div id="content_box">
+
+        <div id="resume_inbox" *ngIf="self">
+            <p>Login name: {{user.username}}</p>
+            <p>Nickname: {{user.nickname}}</p>
+            <!-- <p>Genger: {{user.sex}}</p> -->
+            <p>Email: {{user.email}}</p>
+            <p>Phone: {{user.phone}}</p>
+        </div>
+        <div id="content_inbox"></div>
+        <div id="photo_inbox">
+            <h2>Albums</h2>
+            <div id="albums">
+                <div id="lastEle">
+                    <i class="fa fa-plus" aria-hidden="true" (click)="addAlbum()"></i>
+                </div> 
+            </div>
+            <h2>Photo wall</h2>
+
+        </div>
+    </div>
+</div>
+<div *ngIf="!user">
+    <app-page-not-found></app-page-not-found>
+</div>

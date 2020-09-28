@@ -1,0 +1,17 @@
+<nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li>Community</li>
+      <li id="top_search_box">
+        <input type="text"> 
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </li>
+      <li id="top_user_box">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+        <a routerLink="/personal/{{id}}" *ngIf="username"><i class="fa fa-user-o" aria-hidden="true"></i>{{username}}</a>        
+        <a  routerLink="/login" *ngIf="!username">Sign in</a>
+        <i class="fa fa-plus" aria-hidden="true" (click)="writeDisplay()"></i>
+      </li>
+    </ul>
+</nav>

@@ -1,0 +1,133 @@
+
+
+#main_search{
+    background: url(../assets/img/home_top_bg.jpg);
+    background-size:100%;
+    min-height: 400px;
+    position: relative;
+    width: 100%;
+}
+
+#main_search input{
+    position: absolute; 
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+    height: 45px;
+    width: 480px;
+    border:1px solid #ececec;
+    border-radius: 3px;
+    padding: 0 42px 0 10px;
+    font-size: 25px;
+}
+#main_search i{
+color: #ececec;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 25px;
+    transform: translate(248px,-50%);
+}
+
+#title_one{
+    font-size: 3rem;
+    margin: 30px 100px;
+}
+
+#popular_box {
+    /* color: red; */
+    /* height: 325px; */
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+#popular_box>div{
+    margin: 0 100px;
+}
+
+#popular_box img{
+    height: 325px;
+    padding: 0 8px;
+}
+
+
+#ad_one{
+    height: 24rem;
+    /* background:#f8f7fc; */
+    background:#bad3ec;
+    background:#f3ede9;
+    margin: 80px 100px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#ad_one h1,#ad_one a{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+}
+
+#ad_one a{
+    top: 55%;
+    height: 40px;
+    width: 120px;
+    background:#2ffeff;
+    font-size: 1.25rem;
+    color: white;
+    line-height: 40px;
+    border-radius: 30px;
+}
+
+
+footer{
+    background: #fafafa;
+}
+
+#bottom_context{
+    height: 250px;
+    margin: 0 100px;
+}
+#bottom_context ul{
+    float: left;
+    margin-right: 100px;
+}
+#bottom_context ul:first-child{
+    margin-top: 53px;
+}
+#bottom_context ul:first-child li:last-child i{
+    margin-right: 10px;
+}
+#bottom_context ul:last-child{
+    margin-top: 15px;
+}
+#bottom_context h4{
+    padding-top: 20px;
+}
+#bottom_context li{
+    list-style: none;
+    height: 1.75rem;
+    color: #3e3e40;
+}
+
+#bottom_link {
+    border-top: #ececec solid 1px;
+}
+#bottom_link ul{
+    margin: 0 100px;
+    height: 50px;
+}
+#bottom_link li{
+    float: left;
+    list-style: none;
+    line-height: 50px;
+}
+#bottom_link li:last-child{
+    float: right;
+}
+#bottom_link li a{
+    text-decoration: none;
+    color: #4b35ef;
+}

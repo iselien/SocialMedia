@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConfigServer" />
+        <module name="Comment" />
+        <module name="Gateway" />
+        <module name="EurekaClient" />
+        <module name="EurekaServiceRegistry" />
+        <module name="Interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Comment" target="11" />
+      <module name="ConfigServer" target="11" />
+      <module name="EurekaClient" target="11" />
+      <module name="EurekaServiceRegistry" target="11" />
+      <module name="Gateway" target="1.7" />
+      <module name="Interface" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Comment" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
+      <module name="EurekaClient" options="-parameters" />
+      <module name="EurekaServiceRegistry" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
+    </option>
+  </component>
+</project>

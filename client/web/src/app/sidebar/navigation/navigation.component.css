@@ -1,0 +1,60 @@
+nav{
+    background: #ffffff;
+    /* background: red; */
+    box-shadow: #ececec 1px 1px 3px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 100px;
+}
+
+nav li{
+    list-style: none;
+    margin: auto 12px;
+    color: #1d243e;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+
+nav a{
+    color: #1d243e;
+    text-decoration: none;
+}
+
+#top_search_box{
+    position: relative;
+}
+
+#top_search_box input{
+    height: 25px;
+    width: 300px;
+    border:1px solid #ececec;
+    border-radius: 3px;
+    padding: 0 25px 0 6px;
+    outline:none; 
+}
+
+#top_search_box i{
+    color: #ececec;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#top_user_box{
+    float: right;
+}
+
+#top_user_box i{
+    margin: 0 10px;
+}
+#top_user_box .fa-user-o{
+    margin-right: 0;
+}
+
+#password_content{
+    display: none;
+}
+

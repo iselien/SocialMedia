@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#server:
+#  port: 8002
+
+spring:
+  application:
+    name: comment
+  cloud:
+    config:
+      uri:  http://localhost:8888
+  profiles:
+    active: development

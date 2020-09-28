@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Comment/Comment.iml" filepath="$PROJECT_DIR$/Comment/Comment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EurekaClient/EurekaClient.iml" filepath="$PROJECT_DIR$/EurekaClient/EurekaClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EurekaServiceRegistry/EurekaServiceRegistry.iml" filepath="$PROJECT_DIR$/EurekaServiceRegistry/EurekaServiceRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gateway/Gateway.iml" filepath="$PROJECT_DIR$/Gateway/Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/service.iml" filepath="$PROJECT_DIR$/.idea/service.iml" />
+    </modules>
+  </component>
+</project>

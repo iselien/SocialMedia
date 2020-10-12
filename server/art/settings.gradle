@@ -1,0 +1,3 @@
+rootProject.name = 'art'
+
+include ':main', ':common', ':media'

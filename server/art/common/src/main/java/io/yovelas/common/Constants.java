@@ -5,6 +5,13 @@ package io.yovelas.common;
  */
 
 public class Constants {
+
+    /**
+     * 文件存储位置
+     */
+    public static final String FILE_STORAGE_PATH = "./FileStorage";
+
+
     public static final String URL = "url";
     public static final String BACK_RECORDID= "0";
     public static final String PAYLOAD = "payload";

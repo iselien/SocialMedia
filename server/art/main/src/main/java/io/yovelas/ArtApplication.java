@@ -13,7 +13,7 @@ public class ArtApplication {
 	@CrossOrigin(allowCredentials="true")
 	@GetMapping(path = "/")
 	ModelAndView home() {
-		return new ModelAndView("index.html");
+		return new ModelAndView("index");
 	}
 
 
